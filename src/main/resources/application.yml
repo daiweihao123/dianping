@@ -26,3 +26,8 @@ spring:
 
 mybatis:
   mapper-locations: classpath:mapping/*.xml
+
+#admin官方账号的用户名和密码
+admin:
+  email: admin@imooc.com
+  encrptyPassword: 4QrcOUm6Wau+VuBX8g+IPg==

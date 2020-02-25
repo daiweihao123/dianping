@@ -2,8 +2,6 @@ package com.imooc.dianping.service;
 
 import com.imooc.dianping.common.BusinessException;
 import com.imooc.dianping.model.UserModel;
-import org.apache.catalina.User;
-
 import java.io.UnsupportedEncodingException;
 import java.security.NoSuchAlgorithmException;
 

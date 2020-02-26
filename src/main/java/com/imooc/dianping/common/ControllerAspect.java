@@ -41,8 +41,8 @@ public class ControllerAspect {
                 return CommonRes.create(commonError,"fail");
             }
         }else{
-            CommonError commonError= new CommonError(EmBusinessError.ADMIN_SHOULD_LOGIN);
-            return CommonRes.create(commonError,"fail");
+            Object resultObject = joinPoint.proceed();
+            return resultObject;
         }
     }
 }

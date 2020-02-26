@@ -42,10 +42,11 @@ public class AdminController {
     * @Return: org.springframework.web.servlet.ModelAndView
     **/
     @RequestMapping("/index")
-    @AdminPermission(produceType = "application/json")
-    @ResponseBody
+    @AdminPermission
     public ModelAndView index(){
         ModelAndView modelAndView = new ModelAndView("/admin/admin/index");
+        modelAndView.addObject("CONTROLLER_NAME","admin");
+        modelAndView.addObject("ACTION_NAME","index");
         return modelAndView;
     }
 
